@@ -5,10 +5,11 @@ import phorestRoutes from './routes/phorest.js'
 const app  = express()
 const PORT = process.env.PORT || 3001
 
+// FRONTEND_URL is set in Railway env vars once Vercel gives you a domain
 const ALLOWED_ORIGINS = [
-  'http://localhost:5173',   // Vite dev server
-  'https://treasury.ca',     // production — update when live
-]
+  'http://localhost:5173',
+  process.env.FRONTEND_URL,
+].filter(Boolean)
 
 app.use(cors({ origin: ALLOWED_ORIGINS, credentials: true }))
 app.use(express.json())
