@@ -1,10 +1,13 @@
 import { CalendarPlus, ShoppingBag, Users } from 'lucide-react'
 
+// Replace with your Phorest online booking URL from the Phorest dashboard
+const PHOREST_BOOKING_URL = 'https://treasury-aesthetics.phorest.com/book'
+
 const ACTIONS = [
   {
     icon: CalendarPlus,
     label: 'Book',
-    href: 'https://jane.app',
+    href: PHOREST_BOOKING_URL,
     variant: 'primary',
   },
   {
