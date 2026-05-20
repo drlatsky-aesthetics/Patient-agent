@@ -1,7 +1,7 @@
 import { CalendarPlus, ShoppingBag, Users } from 'lucide-react'
 
 // Replace with your Phorest online booking URL from the Phorest dashboard
-const PHOREST_BOOKING_URL = 'https://treasury-aesthetics.phorest.com/book'
+const PHOREST_BOOKING_URL = 'https://www.phorest.com/salon/treasuryaesthetics'
 
 const ACTIONS = [
   {
