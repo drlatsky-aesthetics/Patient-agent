@@ -7,6 +7,7 @@ import MembershipScreen from './screens/MembershipScreen'
 import RewardsScreen from './screens/RewardsScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import SignInScreen from './screens/SignInScreen'
+import SignUpScreen from './screens/SignUpScreen'
 
 function ProtectedRoute({ children }) {
   return (
@@ -24,6 +25,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/sign-in" element={<SignInScreen />} />
+        <Route path="/sign-up" element={<SignUpScreen />} />
         <Route
           element={
             <ProtectedRoute>
